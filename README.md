@@ -1,21 +1,30 @@
-# Barangay-Disaster-Aid-Allocator-Full-System-
-This repository helps people who are in need when in times of Disasters. It shows who will be prioritized in rescues based on their information.
-Hi
+# flutter_try
 
-## AI Backend Setup
+My Flutter practice repository: experiments with layouts, navigation, authentication, and Firebase while learning Flutter and Dart.
 
-The final project chat/image features now go through a small Vercel serverless backend instead of calling OpenRouter directly from the app.
+> **Peso Pilot**, the AI-powered finance app that started here as my final project (`lib/final_project/`), now has its own repository: **[Peso-Pilot-App](https://github.com/choivxcz/Peso-Pilot-App)**. Go there for the latest version and setup instructions.
 
-Set the OpenRouter key in your Vercel project environment variables:
+## What's inside
 
-```powershell
-OPENROUTER_API_KEY=your_openrouter_key
+```
+lib/
+  final_project/   Original copy of Peso Pilot (kept for history)
+  pages/           Practice screens: welcome, sign-in, profile, navigation, animations
+  widgets/         Reusable practice widgets (navbar, drawer)
+api/               Serverless proxy used by Peso Pilot's AI chat
+functions/         Firebase Functions version of the same proxy
+python-practice/   Small Python exercises from class (loops, lists, file storage)
 ```
 
-Deploy the `api/` folder to Vercel, then point the Flutter app at the deployed API base URL:
+## Run it
 
-```powershell
+```bash
+flutter pub get
 flutter run --dart-define=OPENROUTER_BACKEND_URL=https://your-project.vercel.app/api
 ```
 
-The app will fail fast if `OPENROUTER_BACKEND_URL` is missing.
+The AI chat needs the proxy in `api/` deployed with an `OPENROUTER_API_KEY` environment variable. See the [Peso-Pilot-App README](https://github.com/choivxcz/Peso-Pilot-App#run-it) for details.
+
+---
+
+Built by [Karl Cuerdo](https://github.com/choivxcz).
