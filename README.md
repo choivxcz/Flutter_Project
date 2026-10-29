@@ -1,4 +1,4 @@
-# flutter_try
+# Flutter_Project (formerly flutter_try)
 
 My Flutter practice repository: experiments with layouts, navigation, authentication, and Firebase while learning Flutter and Dart.
 
